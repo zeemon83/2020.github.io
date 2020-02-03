@@ -1,5 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Mono|Press+Start+2P|Source+Code+Pro&display=swap');
+/* pre load */
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(110, 110, 110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
 
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        }
+
+}
+.loading-text { 
+    
+
+}
+
+/* pre load */
 
 html {
 	height: 100%;
@@ -76,7 +106,7 @@ video {
 	top:0;
 	left:0;
 	right: 0;
-	z-index:2000;
+	z-index:98;
 	width: 100%;
     margin: auto;
     

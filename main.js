@@ -1,3 +1,8 @@
+window.addEventListener("load", function() {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden";
+});
+
 // gsap.from('#uberbar', {opacity: 0, duration: 1, y: -50});
 // gsap.from('.landing--img', {duration: 3, backgroundPosition: '0px -200px', opacity:0})
 // gsap.from('#videobox1', {duration: 2, x:150, opacity:0})
@@ -9,7 +14,7 @@ var text = gsap.timeline({paused: true})
 
 
 tl.from('.landing--img', {duration: 3, stagger: .2, backgroundPosition: '0px -200px', opacity:0});
-tl.from('#uberbar', {opacity: 0,  y: -50}, "-=2.8");
+tl.from('#uberbar', {opacity: 0,  y: -50});
 tl.from('.landing--img', {height: '1vh'}, "-=2.8");
 tl.from('#zlogo', {duration: 3, opacity: 0, x: -350, y: -350, fontSize: '0px', ease: "power4.out"}, "=-1.8");
 
@@ -17,7 +22,7 @@ tl.from('#zlogo', {duration: 3, opacity: 0, x: -350, y: -350, fontSize: '0px', e
 
 sl.from('#videobox1', {duration: 1.5, ease: "back.out(1.7)", x:150, opacity:0,});
 
-text.from(".heading--table", {rotation: -37, ease: "back.out(0.7)", y: -100, opacity:0, duration: 1});
+text.from(".heading--table", {rotation: -37, ease: "back.out(0.7)", y: 500, opacity:0, duration: 1});
 
 
 document.querySelector('.divider').addEventListener('mouseover', letsAnimate);

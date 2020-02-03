@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
 // gsap.from('.landing--img', {duration: 3, backgroundPosition: '0px -200px', opacity:0})
 // gsap.from('#videobox1', {duration: 2, x:150, opacity:0})
 
-var tl = gsap.timeline({defaults:{duration: 1}})
+var tl = gsap.timeline({defaults:{duration: 3}})
 var sl = gsap.timeline({paused: true})
 var text = gsap.timeline({paused: true})
 // var logo = gsap.timeline({paused:true})
@@ -15,8 +15,8 @@ var text = gsap.timeline({paused: true})
 
 tl.from('.landing--img', {duration: 3, stagger: .2, backgroundPosition: '0px -200px', opacity:0});
 tl.from('#uberbar', {opacity: 0,  y: -50});
-tl.from('.landing--img', {height: '1vh'}, "-=3.1");
-tl.from('#zlogo', {duration: 3, opacity: 0, x: -350, y: -350, fontSize: '0px', ease: "power4.out"}, "=-1.8");
+tl.from('.landing--img', {height: '1vh'}, "-=6.1");
+tl.from('#zlogo', {duration: 5, opacity: 0, x: -350, y: -350, fontSize: '0px', ease: "power4.out"}, "=-3.8");
 
 // logo.to('#zlogo', {duration: 1, opacity: 0, x: -350, y: -350, ease: "power4.out"});
 

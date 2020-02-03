@@ -15,7 +15,7 @@ var text = gsap.timeline({paused: true})
 
 tl.from('.landing--img', {duration: 3, stagger: .2, backgroundPosition: '0px -200px', opacity:0});
 tl.from('#uberbar', {opacity: 0,  y: -50});
-tl.from('.landing--img', {height: '1vh'}, "-=2.8");
+tl.from('.landing--img', {height: '1vh'}, "-=3.1");
 tl.from('#zlogo', {duration: 3, opacity: 0, x: -350, y: -350, fontSize: '0px', ease: "power4.out"}, "=-1.8");
 
 // logo.to('#zlogo', {duration: 1, opacity: 0, x: -350, y: -350, ease: "power4.out"});

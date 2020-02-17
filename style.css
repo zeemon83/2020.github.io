@@ -471,10 +471,35 @@ footer a {
 /* ipad pro */
 
 @media (max-width: 1024px) {
+    
     #zlogo {
         font-size: 2rem;
     }
     nav { width: 200px;}
+    
+    .navigation--box--two {
+        /* display: flex; */
+        justify-content: center;
+        /* flex-direction: row ; */
+        padding: 0%;
+        
+        
+    }
+    .navigation--box {
+        padding: 0%;
+    }
+
+    .content--box--one {
+        grid-template-columns: repeat(1, 2fr);
+
+    }
+    .heading--table {
+        
+        padding: 0 1em;
+        
+           
+    }
+    
 
 }
 
@@ -482,7 +507,10 @@ footer a {
 /* ipad */
 
 @media (max-width: 768px) {
-    
+    .intro-subtitle {
+        font-size: .61rem;
+        width: 100%;
+    }
 }
 
 
@@ -490,6 +518,11 @@ footer a {
 /* iphone plus*/
 
 @media (max-width: 414px) {
+    .intro-subtitle {
+        font-size: .51rem;
+    }
+
+   
     
 }
 
@@ -498,5 +531,9 @@ footer a {
 /* ipad x */
 
 @media (max-width: 375px) {
+    .intro-subtitle {
+        font-size: .41rem;
+    }
+
     
 }

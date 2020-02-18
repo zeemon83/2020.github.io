@@ -146,7 +146,7 @@ video {
 	z-index:98;
 	
     margin: 0 1.5em;
-    text-align: center;
+    
     
     
 }
@@ -207,20 +207,38 @@ video {
 
 /* image boxes */
 
+.grid-photo {
+    position: relative;
+    
+}
+
+.studio-image {
+    
+    
+}
+
 .studio-image, .profile-image {
     
     background-position: center;
     background-size: cover;
-    min-height: 32em;
+    min-height: 36em;
+    max-width: 52em;
+    
+     
+    
 }
+
+
 
 .studio-image {
     background-image: url(imgs/cleanstudio.jpeg);
+    margin: auto;
 }
 
 
 .profile-image {
     background-image: url(imgs/profile.jpg);
+    margin: auto;
 
 }
 
@@ -581,9 +599,14 @@ footer a {
            
     }
 
-    .link-title {
+    .scroll-section-pre h1 {
         font-size: 1rem;
+    }
+
+    .link-title {
+        font-size: 2rem;
         opacity: 1;
+        font-weight: 500;
     }
 
     .desaturate-img {
@@ -611,6 +634,10 @@ footer a {
 @media (max-width: 414px) {
     .intro-subtitle {
         font-size: .51rem;
+    }
+
+    .link-title {
+        font-size: 1rem;
     }
 
    

@@ -27,15 +27,15 @@ tl.from('#zsubtitle', {duration: 5, opacity: 0, x: 350,  ease: "power4.out"}, "=
 
 // sl.from('#videobox1', {duration: 1.5, ease: "back.out(1.7)", x:150, opacity:0,});
 
-// text.from(".heading--table", {rotation: -37, ease: "back.out(0.7)", y: 500, opacity:0, duration: 1});
+text.from(".heading--animation", { ease: "back.out(0.7)", y: 20, opacity:0, duration: 2});
 
 
-// document.querySelector('.divider').addEventListener('mouseenter', letsAnimate);
-// function letsAnimate() {
-//     sl.play();
-//     text.play();
+document.querySelector('.divider').addEventListener('mouseenter', letsAnimate);
+function letsAnimate() {
+    sl.play();
+    text.play();
     
-//     }
+    }
 
     // =================== video and text animation above
 

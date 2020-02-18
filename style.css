@@ -11,6 +11,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    margin: 0;
     background-color: rgb(26, 26, 26);
     display: flex;
     justify-content: center;
@@ -34,11 +35,22 @@
 
 }
 
+
 /* pre load */
 
 html {
-	height: 100%;
+    height: 100%;
+    margin: auto;
+    width: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: tomato;
+    
 	scroll-behavior: smooth;
+}
+main {
+    margin: 0;
+    width: 100%;
 }
 
 body {
@@ -119,34 +131,37 @@ video {
 
 
 .navigation--box {
-	display: grid;	
-  	/* grid-template-columns: repeat(2, 1fr); */
+    display: grid;	
+    display: inline;
+    min-width: 100%;
+    
+   
     vertical-align: middle;
-    /* background-color: rgba(232, 255, 177, 0.5); */
+   padding: 20px 0;
 
-    padding: 20px 0;
-    max-width: 100%;
+   
+    
 	position:fixed;
-	/* top:0;
-	left:0;
-	right: 0; */
+	
 	z-index:98;
-	width: 100%;
-    margin: auto;
+	
+    margin: 0 1.5em;
+    text-align: center;
     
     
 }
 
 .navigation--box--two {
-	display: flex;
+    text-align: right;
+	/* display: flex;
 	justify-content: flex-end;
-    flex-direction: row ;
+    flex-direction: row ; */
     margin: 0 1.5em;
     
     
 }
 .nav-a {
-	justify-content: right;
+	/* justify-content: right; */
 	margin: 0 7px;
 
 }
@@ -482,6 +497,7 @@ span {
     grid-template-columns: repeat(1, 1fr);
     text-align: justify;
     padding: 0 3em;
+    
     }
 .contact {
     font-size: .8rem;
@@ -525,13 +541,23 @@ footer a {
     
     #zlogo {
         font-size: 2rem;
+        
+    }
+
+
+    .intro-subtitle {
+        font-size: .61rem;
+        width: 100%;
+        line-height: 0;
+        margin: 0;
+        padding: 0;
     }
     nav { width: 200px;}
   /* .nav-a {
         margin: 0 ;
     } */
     
-    .navigation--box--two {
+    .navigation--box {
         display: grid;
         display: inline;
         margin: auto;
@@ -542,9 +568,7 @@ footer a {
         
         
     }
-    .navigation--box {
-        padding: 0%;
-    }
+    
 
     .content--box--one, .content--box--video, .content--box--video-two  {
         grid-template-columns: repeat(1, 2fr);

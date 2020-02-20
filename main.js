@@ -27,15 +27,35 @@ tl.from('#zsubtitle', {duration: 5, opacity: 0, x: 350,  ease: "power4.out"}, "=
 
 // sl.from('#videobox1', {duration: 1.5, ease: "back.out(1.7)", x:150, opacity:0,});
 
-text.from(".heading--animation", { ease: "back.out(0.7)", y: 20, opacity:0, duration: 2});
+// text.from(".heading--animation", { ease: "back.out(0.7)", y: 20, opacity:0, duration: 2});
 
 
-document.querySelector('.divider').addEventListener('mouseenter', letsAnimate);
-function letsAnimate() {
-    sl.play();
-    text.play();
+// document.querySelector('.divider').addEventListener('mouseenter', letsAnimate);
+// function letsAnimate() {
+//     sl.play();
+//     text.play();
     
-    }
+// }
+
+
+// new scrollmagic reveal photo
+var controller = new ScrollMagic.Controller();
+
+var animateIn = new TimelineMax();
+
+animateIn
+.fromTo(".overlay", 2, {skewX:30, scale: 1.5}, {skewX: 0, xPercent:100,
+transformOrigin: "0% 100%", ease: Power4.easeOut})
+
+.from(".heading--animation", { ease: "back.out(0.7)", y: 100, opacity:0, duration: 2}, "=-1.5")
+.from(".heading--animation--two", { ease: "back.out(0.7)", x: -100, opacity:0, duration: 2}, "=-1.5")
+
+
+// make scrollmgic scene
+var scene = new ScrollMagic.Scene({
+    triggerElement: ".picturetrigger"
+})
+.setTween(animateIn).addTo(controller);
 
     // =================== video and text animation above
 

@@ -44,11 +44,11 @@ var controller = new ScrollMagic.Controller();
 var animateIn = new TimelineMax();
 
 animateIn
-.fromTo(".overlay", 2, {skewX:30, scale: 1.5}, {skewX: 0, xPercent:100,
+.fromTo(".overlay", 3, {skewX:30, scale: 1.5}, {skewX: 0, xPercent:100,
 transformOrigin: "0% 100%", ease: Power4.easeOut})
 
 .from(".heading--animation", { ease: "back.out(0.7)", y: 100, opacity:0, duration: 2}, "=-1.5")
-.from(".heading--animation--two", { ease: "back.out(0.7)", x: -100, opacity:0, duration: 2}, "=-1.5")
+.from(".heading--animation--two", { ease: "back.out(0.7)", x: -100, opacity:0, duration: 2}, "=-2.5")
 
 
 // make scrollmgic scene

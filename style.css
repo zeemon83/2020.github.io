@@ -673,9 +673,10 @@ footer a {
     }
 
     .link-title {
-        font-size: 2rem;
+        font-size: 1rem;
         opacity: 1;
         font-weight: 500;
+        place-items: center;
         /* background: rgb(238,174,202); */
         background: linear-gradient(0deg, rgba(238,174,202,0) 1%, rgba(102, 75, 87, 0.5) 50%, rgba(81,127,181,0) 99%);
         
@@ -758,6 +759,10 @@ footer a {
     .text--box {
         margin-top: 9em;
         
+    }
+
+    .link-title {
+        font-size: .8rem;
     }
 
    

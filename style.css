@@ -435,13 +435,13 @@ background: linear-gradient(180deg,rgba(26,26,26,1) 0%, rgba(33,33,33,1) 41%, rg
 }
 
 .divider-links {
-    height: 20em;
+    height: 25vh;
     background: linear-gradient(180deg,rgb(54, 54, 54) 0%, rgba(33,33,33,1) 41%, rgba(26,26,26,1) 79%);
 
 }
 
 .divider-links-bottom {
-    height: 20em;
+    height: 26em;
     /* background: rgb(38,38,38); */
     
 background: linear-gradient(180deg,rgba(26,26,26,1) 0%, rgba(33,33,33,1) 41%, rgb(48, 48, 48) 79%);
@@ -685,6 +685,12 @@ footer a {
 
     .contact {
         font-size: .6rem;
+    }
+
+    .divider-links {
+        height: 15vh;
+        background: linear-gradient(180deg,rgb(54, 54, 54) 0%, rgba(33,33,33,1) 41%, rgba(26,26,26,1) 79%);
+    
     }
     
     

@@ -676,7 +676,11 @@ footer a {
         font-size: 2rem;
         opacity: 1;
         font-weight: 500;
+        text-shadow: rgba(186, 85, 211, 0.452) 2px 2px 2px;
+        
     }
+
+   
 
     .desaturate-img {
         filter: saturate(1);
@@ -721,7 +725,7 @@ footer a {
     }
 
     .link-title {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .text--box {

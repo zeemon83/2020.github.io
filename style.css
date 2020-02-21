@@ -678,7 +678,7 @@ footer a {
         font-weight: 500;
         place-items: center;
         /* background: rgb(238,174,202); */
-        background: linear-gradient(0deg, rgba(238,174,202,0) 1%, rgba(102, 75, 87, 0.5) 50%, rgba(81,127,181,0) 99%);
+        background: linear-gradient(0deg, rgba(238,174,202,0) 20%, rgba(102, 75, 87, 0.4) 50%, rgba(81,127,181,0) 80%);
         
     }
 

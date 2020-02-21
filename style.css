@@ -170,8 +170,9 @@ video {
 .landing--img {
     height: 100vh;
     
-    background-image: url(imgs/radio.jpg);
+    background-image: url(imgs/radiocopy.jpg);
     background-size: cover;
+    background-position: center;
     overflow: hidden;
     display: grid;
     place-items: center;

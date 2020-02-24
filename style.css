@@ -315,15 +315,22 @@ video {
 
 .link-relative {
     position: relative;
+    height: 100%;
+    width: 100%;
 }
 .link-title {
     opacity: 0;
     display: grid;
     place-items: center;
     height: 100%;
+    
+    /* top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-0%); */
     width: 100%;
     /* text-align: center; */
     position: absolute;
+    text-align: center;
     /* line-height: 0; */
     transition-duration: 1110ms;
     font-weight: 100;

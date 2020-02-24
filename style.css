@@ -184,7 +184,7 @@ video {
 
 .landing--img h1{
     
-    font-size: 5rem;
+    font-size: 2rem;
     font-weight: 300;
     text-shadow: rgba(92, 92, 92, 0.322) 1px 1px 1px;
     
@@ -201,13 +201,13 @@ video {
 }
 
 .intro-subtitle {
-    height: 200px;
+    /* height: 0px; */
     margin: auto;
     width: 70%;
     
     display: grid;
     place-items: center;
-    line-height: 0;
+    /* line-height: 1em; */
     
     
 }
@@ -328,7 +328,7 @@ video {
     transition-duration: 1110ms;
     font-weight: 100;
     font-size: 3rem;
-    margin: 0;
+    margin: auto;
     
 }
 
@@ -618,7 +618,7 @@ footer a {
     .intro-subtitle {
         font-size: .61rem;
         width: 100%;
-        line-height: 0;
+        line-height: 4em;
         margin: 0;
         padding: 0;
     }
@@ -655,6 +655,7 @@ footer a {
         margin: auto;
         width: 70%;
         max-width: 20em;
+        grid-row: 2 /2 ; 
         
     }
     .text--box {
@@ -678,8 +679,8 @@ footer a {
         font-weight: 500;
         place-items: center;
         /* background: rgb(238,174,202); */
-        background: linear-gradient(0deg, rgba(238,174,202,0) 20%, rgba(102, 75, 87, 0.4) 50%, rgba(81,127,181,0) 80%);
-        
+        /* background: linear-gradient(0deg, rgba(238,174,202,0) 20%, rgba(102, 75, 87, 0.4) 50%, rgba(81,127,181,0) 80%);
+         */
     }
 
    

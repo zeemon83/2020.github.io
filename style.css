@@ -184,8 +184,9 @@ video {
 
 .landing--img h1{
     
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 300;
+    text-align: center;
     text-shadow: rgba(92, 92, 92, 0.322) 1px 1px 1px;
     
     /* text-shadow: 8px 20px 4px rgba(0, 112, 177, 0.35),
@@ -196,8 +197,15 @@ video {
 }
 .landing--img h2 {
     font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
     text-shadow: rgba(92, 92, 92, 0.322) 1px 1px 1px;
+    padding-top: 2em;
 
+}
+.cph-subtitle { 
+    font-size: 1.4rem !important;
+    
 }
 
 .intro-subtitle {
@@ -646,6 +654,8 @@ footer a {
         
     }
 
+    
+
     .navigation--box--two {
         margin: auto;
     }
@@ -736,6 +746,14 @@ footer a {
         font-size: .51rem;
     }
 
+    .landing--img h1 {
+        font-size: 1.5rem;
+    }
+
+    .landing--img h2 {
+        font-size: 0.8rem;
+    }
+
     .link-title {
         font-size: 1rem;
     }
@@ -765,6 +783,14 @@ footer a {
 
 @media (max-width: 320px) {
    
+
+    .landing--img h1 {
+        font-size: 1.2rem;
+    }
+
+    .landing--img h2 {
+        font-size: 0.65rem;
+    }
 
     .text--box {
         margin-top: 9em;

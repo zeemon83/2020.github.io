@@ -13,11 +13,11 @@ var text = gsap.timeline({paused: true})
 // var logo = gsap.timeline({paused:true})
 
 
-tl.from('.landing--img', {duration: 3, stagger: .2, opacity:0});
+tl.from('.landing--img', {duration: 2, stagger: .2, opacity:0});
 tl.from('#uberbar', {opacity: 0,  y: -50});
 tl.from('.landing--img', {height: '1vh'}, "-=6.1");
-tl.from('#zlogo', {duration: 5, opacity: 0, x: -350,  ease: "power4.out"}, "=-3.8");
-tl.from('#zsubtitle', {duration: 5, opacity: 0, x: 350,  ease: "power4.out"}, "=-5.1");
+tl.from('#zlogo', {duration: 2, opacity: 0, x: -350,  ease: "power4.out"}, "=-3.8");
+tl.from('#zsubtitle', {duration: 1, opacity: 0, x: 350,  ease: "power4.out"}, "=-5.1");
 
 
 

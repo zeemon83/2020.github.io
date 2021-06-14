@@ -170,7 +170,7 @@ video {
 .landing--img {
     height: 100vh;
     
-    background-image: url(imgs/radiocopy.jpg);
+    /* background-image: url(imgs/annie-spratt.jpg); */
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -184,7 +184,7 @@ video {
 
 .landing--img h1{
     
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 300;
     text-align: center;
     text-shadow: rgba(92, 92, 92, 0.322) 1px 1px 1px;
@@ -465,7 +465,10 @@ background: linear-gradient(180deg,rgba(26,26,26,1) 0%, rgba(33,33,33,1) 41%, rg
     border-bottom: rgb(190, 186, 186) solid 1px; */
     /* border-top: rgb(190, 186, 186) solid 1px; */
 }
-
+.credits {
+    text-align: right;
+    padding: 1em 3em;
+}
 /* Scroll animation */
 
 .scroll-section {

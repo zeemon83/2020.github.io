@@ -411,6 +411,13 @@ video {
         max-width: 200px;
         max-height: 100%;
     }
+    .logos-title {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 3em 3em;
+    /* font-size: 1.5rem; */
+        text-align: justify;
+    }
 
     .text--box {
         /* display: block;

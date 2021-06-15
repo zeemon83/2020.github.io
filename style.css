@@ -61,11 +61,12 @@ h1, h2, h3, a, p, blockquote{
     /* font-family: 'montserrat', sans-serif; */
     /* font-family: 'ogg',Arial, Helvetica, sans-serif; */
     font-family: 'Source Code Pro', Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    
 
     /* text-transform: uppercase; */
     color: whitesmoke;
 }
+
 
 h1, h2, a, blockquote {
     text-transform: uppercase;
@@ -76,7 +77,7 @@ h1 {
 }
 
 p {
-    font-weight: 200;
+    font-weight: 400;
     line-height: 2em;
 }
 
@@ -738,6 +739,9 @@ footer a {
         margin-top: 20em;
         
     }
+    .divider {
+        height: 5em;}
+        
 }
 
 
@@ -802,6 +806,9 @@ footer a {
 
     .link-title {
         font-size: .8rem;
+    }
+    p {
+        font-weight: 400;
     }
 
    

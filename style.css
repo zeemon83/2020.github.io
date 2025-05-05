@@ -227,12 +227,23 @@ video {
 .landing-img-png {
     margin: auto;
     filter: saturate(1);
-    max-height: 30em; 
-    display: grid;
+    max-height: 60em; 
+
+    width: 100%; 
+       display: grid;
     place-items: center;
+   
    
     
 }
+
+.logoimg {
+    max-width: 100%; /* Ensures the image scales down to fit its container */
+    height: auto; /* Maintains the aspect ratio */
+    object-fit: cover; /* Ensures the image covers its container without distortion */
+    display: block; /* Removes extra space below the image */
+}
+
 
 .intro-subtitle {
     /* height: 0px; */
@@ -302,7 +313,6 @@ video {
      
     
 }
-
 
 
 .studio-image {
@@ -699,6 +709,11 @@ span {
     
     }
 .contact {
+    font-size: .8rem;
+    color: rgb(0, 0, 0);
+}
+.contact a 
+{
     font-size: .8rem;
     color: rgb(0, 0, 0);
 }

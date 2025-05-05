@@ -10,14 +10,17 @@
 var tl = gsap.timeline({defaults:{duration: 3}})
 var sl = gsap.timeline({paused: true})
 var text = gsap.timeline({paused: true})
+
 // var logo = gsap.timeline({paused:true})
 
 
-tl.from('.landing--img', {duration: 3, stagger: .2, opacity:0});
+tl.from('.landing--img', {duration: 3.5, stagger: .2, opacity:0});
 tl.from('#uberbar', {opacity: 0,  y: -50});
-tl.from('.landing--img', {height: '1vh'}, "-=6.1");
-tl.from('#zlogo', {duration: 5, opacity: 0, x: -350,  ease: "power4.out"}, "=-3.8");
-tl.from('#zsubtitle', {duration: 5, opacity: 0, x: 350,  ease: "power4.out"}, "=-5.1");
+// tl.from('.landing--img', {height: '1vh'}, "-=6.1");
+tl.from('#zlogo', {duration: 1, opacity: 0, x: -350,  ease: "power4.out"}, "=-4.8");
+tl.from('#zsubtitle', {duration: 1, opacity: 0, x: 350,  ease: "power4.out"}, "=-5.1");
+tl.from('.landing-img-png', {duration: 1, scale: 2.5, opacity: 0, x: 350,  ease: "back.out(1.7)"}, "=-5.1");
+
 
 
 
@@ -44,10 +47,10 @@ var controller = new ScrollMagic.Controller();
 var animateIn = new TimelineMax();
 
 animateIn
-.fromTo(".overlay", 3, {skewX:30, scale: 1.5}, {skewX: 0, xPercent:100,
-transformOrigin: "0% 100%", ease: Power4.easeOut})
+.fromTo(".overlay", 1,  {skewX:10, scale: 1.5}, {skewX: -10, xPercent:100,
+transformOrigin: "0% 100%", ease: Power4.easeOut},)
 
-.from(".heading--animation", { ease: "back.out(0.7)", y: 100, opacity:0, duration: 2}, "=-1.5")
+.from(".heading--animation", { ease: "back.out(0.7)", y: -50, opacity:0, duration: 5}, "=-2.5")
 .from(".heading--animation--two", { ease: "back.out(0.7)", y: -100, opacity:0, duration: 2}, "=-2.5")
 
 
@@ -56,6 +59,28 @@ var scene = new ScrollMagic.Scene({
     triggerElement: ".picturetrigger"
 })
 .setTween(animateIn).addTo(controller);
+
+
+// 2nd  scrollmagic reveal photo
+var controllerTwo = new ScrollMagic.Controller();
+
+var animateInTwo = new TimelineMax();
+
+animateInTwo
+.fromTo(".overlay-two", 2, {skewX:30, scale: 1.5}, {skewX: 0, xPercent:100,
+transformOrigin: "0% 100%", ease: Power4.easeOut},)
+
+.from(".heading--animation-b", { ease: "back.out(0.7)", y: -50, opacity:0, duration: 2}, "=-3.5")
+.from(".heading--animation--two-b", { ease: "back.out(0.7)", y: -100, opacity:0, duration: 2}, "=-3.5")
+// .to("body", { duration: 2, backgroundColor: "rgb(74, 74, 74)"}, "=-3.5")
+
+
+// make scrollmgic scene
+var sceneTwo = new ScrollMagic.Scene({
+    triggerElement: ".picturetriggertwo"
+})
+.setTween(animateInTwo).addTo(controllerTwo);
+
 
     // =================== video and text animation above
 
@@ -138,3 +163,88 @@ if (hasTouch()) { // remove all the :hover stylesheets
         }
     } catch (ex) {}
 }
+
+
+
+
+// input email form yt video
+// $(document).ready(function () {
+//     $ ('.submit').click(function (event){
+//         event.preventDefault()
+        
+
+//         var email = $('.email').val()
+//         var subject = $('.subject').val()
+//         var message = $('.message').val()
+//         var statusElm = $('.status')
+//         statusElm.empty()
+
+//         if(email.length > 5 && email.includes('@') && email.includes('.')) {
+//             statusElm.append('<div>Email is valid</div>')
+//         } else {
+//             event.preventDefault()
+//             statusElm.append('<div>Email is invalid</div>')
+//         }
+
+//         if(subject.length >= 2 ) {
+//             statusElm.append('<div>Subject is valid</div>')
+//         } else {
+//             event.preventDefault()
+//             statusElm.append('<div>Subject is invalid</div>')
+//         }
+
+//         if(message.length >= 5 ) {
+//             statusElm.append('<div>Message is valid</div>')
+//         } else {
+//             event.preventDefault()
+//             statusElm.append('<div>Message is invalid</div>')
+//         }
+//     })
+// })
+
+// from formspree
+window.addEventListener("DOMContentLoaded", function() {
+
+    // get the form elements defined in your form HTML above
+    
+    var form = document.getElementById("my-form");
+    var button = document.getElementById("my-form-button");
+    var status = document.getElementById("my-form-status");
+
+    // Success and Error functions for after the form is submitted
+    
+    function success() {
+      form.reset();
+      button.style = "display: none ";
+      status.innerHTML = "Thanks!";
+    }
+
+    function error() {
+      status.innerHTML = "Oops! There was a problem.";
+    }
+
+    // handle the form submission event
+
+    form.addEventListener("submit", function(ev) {
+      ev.preventDefault();
+      var data = new FormData(form);
+      ajax(form.method, form.action, data, success, error);
+    });
+  });
+  
+  // helper function for sending an AJAX request
+
+  function ajax(method, url, data, success, error) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(method, url);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+      } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+      }
+    };
+    xhr.send(data);
+  }

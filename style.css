@@ -514,13 +514,13 @@ video {
     display: table;
     width: 100%;
     
-    grid-column: 2/ span 8;
+    grid-column: 2/ span 12;
 }
 .indent--bio2 {
     display: table;
     width: 100%;
     
-    grid-column: 4/ span 12;
+    grid-column: 3/ span 12;
 }
 .title-pad {
     padding-top: 4em;

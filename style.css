@@ -61,7 +61,7 @@ body {
     margin: 0;
     background-color: rgb(255, 255, 255);
 }
-h1, h2, h3, a, p, blockquote, label, address{
+h1, h2, h3, a, p, li, blockquote, label, address{
     /* font-family: 'montserrat', sans-serif; */
     font-family: 'lato', Arial, Helvetica, sans-serif;
     
@@ -76,7 +76,7 @@ h1, h2, h3, a, p, blockquote, label, address{
 
 
 
-h2, a, h3, address {
+h2, a, h3, li, address {
     font-weight: 300;
     
 }
@@ -92,7 +92,7 @@ h1 {
     margin: 0; 
 }
 
-p, address {
+p, li, address {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 2em;
@@ -418,8 +418,8 @@ video {
 }
 
 .desaturate-img {
-    filter: saturate(0.2);
-    transition-duration: 10ms;
+    /* filter: saturate(0.2);
+    transition-duration: 10ms; */
 }
 
 .desaturate-img:hover {
@@ -887,6 +887,13 @@ footer a {
         margin-top: 20em;
         
     }
+    .landing-img-png {
+        
+        max-height: 12em; 
+        max-width: 100%;
+       
+        
+    }
 }
 
 
@@ -909,7 +916,7 @@ footer a {
 
     .landing-img-png {
         
-        max-height: 15em; 
+        max-height: 10em; 
         
        
         
@@ -947,8 +954,8 @@ footer a {
 
     .landing-img-png {
         
-        max-height: 10em; 
-        
+        max-height: 8em; 
+        max-width: 100%;
        
         
     }

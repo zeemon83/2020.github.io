@@ -891,6 +891,9 @@ footer a {
         
         max-height: 12em; 
         max-width: 100%;
+        width: auto; /* Ensures the width adjusts proportionally */
+        height: auto; /* Maintains the aspect ratio */
+        object-fit: contain; /* Prevents distortion */
        
         
     }
@@ -917,6 +920,10 @@ footer a {
     .landing-img-png {
         
         max-height: 10em; 
+        max-width: 100%;
+        width: auto; /* Ensures the width adjusts proportionally */
+        height: auto; /* Maintains the aspect ratio */
+        object-fit: contain; /* Prevents distortion */
         
        
         
@@ -955,7 +962,11 @@ footer a {
     .landing-img-png {
         
         max-height: 8em; 
-        max-width: 100%;
+        max-width: 100%;  
+        width: auto; /* Ensures the width adjusts proportionally */ 
+        height: auto; /* Maintains the aspect ratio */
+        object-fit: contain; /* Prevents distortion */
+          
        
         
     }

@@ -490,10 +490,7 @@ video {
     }
 
     .content--box--one {
-        grid-template-columns: repeat(12, 1fr);
-        margin: auto;
-        /* background-color: lightcoral; */
-        padding: 3em 3em;
+       padding-top: 3em;
         
     }
 .content--box--one img {

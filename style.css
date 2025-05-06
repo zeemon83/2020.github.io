@@ -167,6 +167,7 @@ video {
 
 
 	z-index:98;
+    background-color: white;
     
     
 }
@@ -226,12 +227,15 @@ video {
 }
 .landing-img-png {
     margin: auto;
-    filter: saturate(1);
+    /* filter: saturate(1); */
     max-height: 60em; 
 
     width: 100%; 
        display: grid;
-    place-items: center;
+    place-items: justify;
+    
+
+    
    
    
     
@@ -372,6 +376,7 @@ video {
   display: block; 
   
   
+  
 }
 
 .link-heading {
@@ -482,6 +487,14 @@ video {
         position: relative; */
         
         /* background-color: lightcoral; */
+    }
+
+    .content--box--one {
+        grid-template-columns: repeat(12, 1fr);
+        margin: auto;
+        /* background-color: lightcoral; */
+        padding: 3em 3em;
+        
     }
 .content--box--one img {
     min-width: 100%;

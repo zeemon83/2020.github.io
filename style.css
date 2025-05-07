@@ -84,7 +84,7 @@ h3 {
     line-height: 2em;
 }
 
-h1, h2, a, blockquote {
+h1, h2, blockquote {
     text-transform: uppercase;
 }
 
@@ -796,7 +796,7 @@ span {
 }
 .contact a 
 {
-    font-size: .8rem;
+    font-size: 1rem;
     color: rgb(0, 0, 0);
 }
 

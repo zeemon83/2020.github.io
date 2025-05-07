@@ -541,7 +541,7 @@ video {
     grid-column: 3/ span 12;
 }
 .title-pad {
-    padding-top: 4em;
+    /* padding-top: 4em; */
 }
 
 
@@ -915,6 +915,9 @@ footer a {
        
         
     }
+
+    
+
 }
 
 

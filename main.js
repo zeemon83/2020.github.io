@@ -248,3 +248,36 @@ window.addEventListener("DOMContentLoaded", function() {
     };
     xhr.send(data);
   }
+
+
+  const track = document.querySelector('.carousel-track');
+const prevButton = document.querySelector('.prev-btn');
+const nextButton = document.querySelector('.next-btn');
+const photos = Array.from(track.children);
+
+let currentIndex = 0;
+
+// Function to update the carousel position
+function updateCarousel() {
+  const photoWidth = photos[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${currentIndex * photoWidth}px)`;
+}
+
+// Event listener for the next button
+nextButton.addEventListener('click', () => {
+  if (currentIndex < photos.length - 1) {
+    currentIndex++;
+    updateCarousel();
+  }
+});
+
+// Event listener for the previous button
+prevButton.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel();
+  }
+});
+
+// Ensure the carousel is positioned correctly on load
+window.addEventListener('resize', updateCarousel);

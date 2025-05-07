@@ -148,6 +148,63 @@ video {
     
 }
 
+
+
+
+/* Carousel Section */
+.photo-carousel {
+    width: 80%; /* Adjust the width to control the size */
+    max-width: 500px; /* Set a maximum width for the image */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the image fits within the container without distortion */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure proper alignment */
+  }
+  
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+  }
+  
+  .carousel-photo {
+    min-width: 100%; /* Show one photo at a time */
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
 /* =======Video+++++++ */
 
 

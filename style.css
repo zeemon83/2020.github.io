@@ -148,62 +148,69 @@ video {
     
 }
 
-
-
-
-/* Carousel Section */
-.photo-carousel {
-    width: 80%; /* Adjust the width to control the size */
-    max-width: 500px; /* Set a maximum width for the image */
-    height: auto; /* Maintain the aspect ratio */
-    object-fit: contain; /* Ensure the image fits within the container without distortion */
-    margin: 0 auto; /* Center the image horizontally */
-    display: block; /* Ensure proper alignment */
+/* Photo Gallery Section */
+.photo-gallery {
+    padding: 2rem;
+    text-align: center;
   }
   
-  .carousel-container {
-    display: flex;
-    align-items: center;
-    position: relative;
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .gallery-photo {
     width: 100%;
-  }
-  
-  .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-  }
-  
-  .carousel-photo {
-    min-width: 100%; /* Show one photo at a time */
     height: auto;
-    object-fit: cover;
-  }
-  
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 2rem;
     cursor: pointer;
-    z-index: 10;
-    padding: 0.5rem 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .prev-btn {
-    left: 10px;
+  .gallery-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  .next-btn {
-    right: 10px;
+  /* Fullscreen Zoom */
+  .fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Fullscreen width */
+    height: 100%; /* Fullscreen height */
+    object-fit: contain; /* Ensure the image fits within the screen without distortion */
+    z-index: 1000; /* Bring the image to the front */
+    background: rgba(0, 0, 0, 0.8); /* Optional: Add a dark background */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .carousel-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+  .fullscreen:hover {
+    transform: scale(1.02);
   }
+
+/* 
+  gallery link */
+  .highlighted-link {
+    text-align: center; /* Centers the link */
+    margin: 2rem 0; /* Adds spacing above and below */
+  }
+  
+  .highlighted-gallery {
+    color: #fff; /* Text color */
+    background-color: #ff5733; /* Highlight background color */
+    padding: 0.5rem 1rem; /* Adds padding around the text */
+    text-decoration: none; /* Removes underline */
+    border-radius: 5px; /* Rounds the corners */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .highlighted-gallery:hover {
+    background-color: #c13d24; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarges the link on hover */
+  }
+
 
 /* =======Video+++++++ */
 

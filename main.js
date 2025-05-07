@@ -249,35 +249,32 @@ window.addEventListener("DOMContentLoaded", function() {
     xhr.send(data);
   }
 
+// photogallery
 
-  const track = document.querySelector('.carousel-track');
-const prevButton = document.querySelector('.prev-btn');
-const nextButton = document.querySelector('.next-btn');
-const photos = Array.from(track.children);
+document.addEventListener('DOMContentLoaded', () => {
+  const photos = document.querySelectorAll('.gallery-photo');
 
-let currentIndex = 0;
+  photos.forEach(photo => {
+    photo.addEventListener('click', (e) => {
+      console.log('Photo clicked:', photo); // Debugging log
+      if (!photo.classList.contains('fullscreen')) {
+        // Zoom in
+        photo.classList.add('fullscreen');
+        console.log('Fullscreen class added'); // Debugging log
+      } else {
+        // Zoom out
+        photo.classList.remove('fullscreen');
+        console.log('Fullscreen class removed'); // Debugging log
+      }
+    });
+  });
 
-// Function to update the carousel position
-function updateCarousel() {
-  const photoWidth = photos[0].getBoundingClientRect().width;
-  track.style.transform = `translateX(-${currentIndex * photoWidth}px)`;
-}
-
-// Event listener for the next button
-nextButton.addEventListener('click', () => {
-  if (currentIndex < photos.length - 1) {
-    currentIndex++;
-    updateCarousel();
-  }
+  // Close fullscreen when clicking outside the image
+  document.addEventListener('click', (e) => {
+    const fullscreenPhoto = document.querySelector('.fullscreen');
+    if (fullscreenPhoto && e.target !== fullscreenPhoto) {
+      fullscreenPhoto.classList.remove('fullscreen');
+      console.log('Fullscreen class removed by document click'); // Debugging log
+    }
+  });
 });
-
-// Event listener for the previous button
-prevButton.addEventListener('click', () => {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateCarousel();
-  }
-});
-
-// Ensure the carousel is positioned correctly on load
-window.addEventListener('resize', updateCarousel);

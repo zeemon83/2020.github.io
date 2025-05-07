@@ -379,6 +379,14 @@ video {
   
 }
 
+.image-width {
+    /* max-width:80em; */
+    display: block;
+    margin: auto;
+    /* background-color: lightcoral; */
+    
+}
+
 .link-heading {
     height: 100%;
     display: flex;
@@ -524,7 +532,7 @@ video {
     display: table;
     width: 100%;
     
-    grid-column: 2/ span 12;
+    grid-column:3/ span 12;
 }
 .indent--bio2 {
     display: table;

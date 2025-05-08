@@ -151,13 +151,20 @@ video {
 /* Photo Gallery Section */
 .photo-gallery {
     padding: 2rem;
+    padding-top: 4em;
     text-align: center;
+   
+    
+
+
+    
   }
   
   .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
+    overflow: hidden;
   }
   
   .gallery-photo {
@@ -165,7 +172,22 @@ video {
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+    
+
+    width: 100%; /* Ensures the image fills the width of the grid cell */
+    height: 100%; /* Ensures the image fills the height of the grid cell */
+    object-fit: cover; /* Maintains aspect ratio and fills the container */
+    display: block; /* Removes extra space below the image */
+    overflow: hidden; /* Prevents the image from overflowing */
+
+
+
+}
+
+  .gallery-grid > img {
+    aspect-ratio: 1 / 1; /* Ensures square grid items */
+    overflow: hidden; /* Hides any overflow caused by cropping */
+}
   
   .gallery-photo:hover {
     transform: scale(1.05);
@@ -198,8 +220,8 @@ video {
   }
   
   .highlighted-gallery {
-    color: #fff; /* Text color */
-    background-color: #ff5733; /* Highlight background color */
+    color: #ff3535; /* Text color */
+    /* background-color: #ff5733;  */
     padding: 0.5rem 1rem; /* Adds padding around the text */
     text-decoration: none; /* Removes underline */
     border-radius: 5px; /* Rounds the corners */
@@ -207,7 +229,7 @@ video {
   }
   
   .highlighted-gallery:hover {
-    background-color: #c13d24; /* Darker background on hover */
+    /* background-color: #c13d24;  */
     transform: scale(1.05); /* Slightly enlarges the link on hover */
   }
 

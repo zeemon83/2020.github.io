@@ -944,7 +944,7 @@ footer a {
     }
 
      h1 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         
     }
 
@@ -1037,7 +1037,7 @@ footer a {
 
     .landing-img-png {
         
-        max-height: 10em; 
+        /* max-height: 10em;  */
         max-width: 100%;
         width: auto; /* Ensures the width adjusts proportionally */
         height: auto; /* Maintains the aspect ratio */

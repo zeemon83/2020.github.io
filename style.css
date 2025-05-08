@@ -220,7 +220,7 @@ video {
   }
   
   .highlighted-gallery {
-    color: #ff3535; /* Text color */
+    color: #228B22; /* Text color */
     /* background-color: #ff5733;  */
     padding: 0.5rem 1rem; /* Adds padding around the text */
     text-decoration: none; /* Removes underline */
@@ -361,7 +361,8 @@ video {
     border-radius: 8px;
     
     margin-top: 10px;
-    color: rgb(255, 133, 111);
+    color: #228B22;
+    text-transform: uppercase;
     
     
 }
@@ -942,6 +943,11 @@ footer a {
            
     }
 
+     h1 {
+        font-size: 1.4rem;
+        
+    }
+
     .scroll-section-pre h1 {
         font-size: 1rem;
     }
@@ -998,7 +1004,7 @@ footer a {
     }
     .landing-img-png {
         
-        max-height: 12em; 
+        max-height: 20em; 
         max-width: 100%;
         width: auto; /* Ensures the width adjusts proportionally */
         height: auto; /* Maintains the aspect ratio */

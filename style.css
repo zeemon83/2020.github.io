@@ -217,15 +217,19 @@ video {
   .highlighted-link {
     text-align: center; /* Centers the link */
     margin: 2rem 0; /* Adds spacing above and below */
+padding-top: 5rem;
+
   }
   
   .highlighted-gallery {
     color: #228B22; /* Text color */
     /* background-color: #ff5733;  */
-    padding: 0.5rem 1rem; /* Adds padding around the text */
+    padding: 0.5rem 0rem; /* Adds padding around the text */
     text-decoration: none; /* Removes underline */
     border-radius: 5px; /* Rounds the corners */
     transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 700;
+    
   }
   
   .highlighted-gallery:hover {
@@ -363,6 +367,7 @@ video {
     margin-top: 10px;
     color: #228B22;
     text-transform: uppercase;
+    font-weight: 700;
     
     
 }

@@ -1018,6 +1018,24 @@ footer a {
 }
 
 
+/* social icons */
+
+.social-icon {
+    width: 40px; /* Adjust the size of the icons */
+    height: 40px;
+    margin: 0 10px; /* Add spacing between icons */
+    transition: transform 0.3s ease; /* Add a hover effect */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  }
+  
+  .footer-link {
+    display: inline-block; /* Ensures the icons are inline */
+  }
+
+
 
 /* iphone plus*/
 

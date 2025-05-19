@@ -828,6 +828,14 @@ span {
     color: rgb(0, 0, 0);
 }
 
+.contact h3 {
+
+    margin: 0; 
+  padding: 0; 
+  border: none; 
+    
+}
+
 
 
 /* contact section */
@@ -1009,7 +1017,7 @@ footer a {
     }
     .landing-img-png {
         
-        max-height: 17em; 
+        max-height: 16em; 
         max-width: 100%;
         width: auto; /* Ensures the width adjusts proportionally */
         height: auto; /* Maintains the aspect ratio */

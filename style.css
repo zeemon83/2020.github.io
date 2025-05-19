@@ -1009,7 +1009,7 @@ footer a {
     }
     .landing-img-png {
         
-        max-height: 20em; 
+        max-height: 17em; 
         max-width: 100%;
         width: auto; /* Ensures the width adjusts proportionally */
         height: auto; /* Maintains the aspect ratio */

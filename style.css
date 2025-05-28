@@ -43,6 +43,7 @@
 
 html {
     height: 100%;
+    
     margin: 0;
     width: auto;
     display: inline-block;
@@ -52,6 +53,11 @@ html {
     scroll-behavior: smooth;
     
 }
+
+
+
+
+
 main {
     margin: 0;
     width: 100%;
@@ -296,6 +302,17 @@ padding-top: 5rem;
     
     
 }
+.background-img {
+    background-image: url(imgs/images/logobackground2.png);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    
+    /* grid-template-columns: repeat(2, 1fr); */
+    place-items: center;
+    
+}
 
 .landing--img h1{
     
@@ -450,12 +467,14 @@ padding-top: 5rem;
     margin: 0;
     min-width: 100%;
     min-height: 100%;
+    
 }
 
 
 .video-links-row-one {
    
     grid-template-columns: 50% 50%;
+    
 }
 
 .video-links-row-two {
@@ -472,7 +491,7 @@ padding-top: 5rem;
 }
 
 .image-width {
-    /* max-width:80em; */
+    max-width:90em;
     display: block;
     margin: auto;
     /* background-color: lightcoral; */
@@ -803,7 +822,60 @@ span {
 
 
 /* Scroll animation */
+/* testemonial section */
 
+
+.testimonials-section {
+  max-width: 60em;
+  margin: 3em auto;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.testimonials-title {
+  font-size: 2rem;
+  margin-bottom: 1.5em;
+  color: #333;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em 1.5em;
+}
+
+.testimonial {
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 1.5em 1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  font-size: 1.05em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 120px;
+}
+
+.testimonial h3 {
+  margin-top: 1em;
+  font-size: 0.95em;
+  color: #888;
+  font-style: italic;
+  margin-top: auto; 
+  
+}
+
+
+@media (max-width: 900px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* contact section */
 
@@ -1011,7 +1083,7 @@ footer a {
     }
     .landing-img-png {
         
-        max-height: 16em; 
+        max-height: 14.5em; 
         max-width: 100%;
         width: auto; /* Ensures the width adjusts proportionally */
         height: auto; /* Maintains the aspect ratio */
